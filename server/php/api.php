@@ -40,6 +40,17 @@ switch ($method) {
     $sql = "insert into $table set $set"; break;
   case 'DELETE':
     $sql = "delete $table where id=$key"; break;
+  case 'OPTION':
+      header("Access-Control-Allow-Origin: *");
+      header("Access-Control-Max-Age: 2520");
+      header("Access-Control-Allow-Methods: PUT, DELETE, XMODIFY, POST, GET");
+      die("");
+
+}
+
+if ( ! $sql ) {
+    die("");
+
 }
  
 // excecute SQL statement
