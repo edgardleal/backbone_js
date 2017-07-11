@@ -6,7 +6,7 @@
  */
 
 var Model = Backbone.Model.extend({
-    url: "/.json",
+    url: "http://localhost:8888/api.php/conta/",
     defaults: {
         _id: 0,
         data: new Date(),
